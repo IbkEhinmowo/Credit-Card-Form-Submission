@@ -1,82 +1,243 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url(src/assets/SpaceGrotesk-Regular.ttf) format('truetype');
+  /* You can also add more font formats here if needed */
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  color: white;
+  text-decoration: none; /* no underline */
+}
+body {
+  font-family: 'SpaceGrotesk', sans-serif !important; 
+}
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+}
+#mobile{
+  display: none;
+}
+
+#desktop {
+  height: 100vh;
+  position: relative;
+  display: block;
+  max-width: 100%; /* Ensure the image fits within the container */
+}
+
+.cards {
+  position: absolute;
+  bottom: 35%; /* Position the cards at the bottom of the image */
+  left: 90%;
+  transform: translateX(-50%); /* Center the cards horizontally */
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+ 
+  width: 60%;
+  flex-direction: column; /* Set the width of the cards container */
+}
+
+.cards > img {
+  width: 23vw;
+  display: flex;
+  border-radius: 1em;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+   /* Make sure card images take up the full width of their container */
+}
+.cards > img:nth-child(2) {
+  margin-left: 60%; /* Displace the second child image to the right */
+}
+.outer{
+
+  margin-right: 6%;
+  width: 30%;
+}
+p{
+  color:hsl(278, 68%, 11%)
+}
+input{
+  padding:2%;
+  width: 70%;
+  font-size: larger;
+  font-family: 'SpaceGrotesk', sans-serif ;
+  border-radius: 10px;
+ 
+  border: 1px solid hsl(279, 6%, 55%)
+}
+.name > input{
+  width: 90%;
+  
+}
+.last{
+  display: flex;
+  align-items: center;
+ 
+  justify-content: space-around;
+  width:100%;
+}
+.number > input{
+  width: 90%;
+  
+}
+
+.exp >input{
+  width: 30%;
+}
+.outer div {
+  /* Your styling for the targeted divs goes here */
+  margin-bottom: 1em;
+ 
+}
+input:active{
+  border: 1p solid hsl(249, 99%, 64%);
+}
+button{
+  padding:5%;
+  width: 70%;
+  border-radius: 20px;
+  border: 1px solid hsl(279, 6%, 55%);
+  color: hsl(279, 6%, 55%);
+}
+.cvc > input{
+  width: 75%;
+  padding: 3%;
+  
+}
+div > p:nth-child(3){
+  color:red;
+}
+#stubborn{
+  color:red;
+}
+
+button {
+  background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
+  margin: 10px;
+  padding: 15px 45px;
   text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.invalid-input > input {
+  border: 1px solid red;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(1) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 1408px) { 
+  .cards > img:nth-child(2) {
+    margin-left: 20%; /* Displace the second child image to the right */
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(1) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 908px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
   }
-}
+  .image-container {
+    position: relative;
+    transform: rotate(90deg);
+  }
+  #mobile{
+    height: 100vw;
+    position: relative;
+    display: block;
+    max-width: 100%;
 
-.card {
-  padding: 2em;
-}
+  }
+  .outer{
+   
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #desktop {
+    display: none;
 
-.read-the-docs {
-  color: #888;
+  }
+  .cards {
+    
+    position: absolute;
+    bottom: 15%; /* Position the cards at the bottom of the image */
+    left: 80%;
+    transform: translateX(-50%); /* Center the cards horizontally */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+   
+    width: 60%;
+    flex-direction: column; /* Set the width of the cards container */
+  }
+  
+  .cards > img {
+    transform: rotate(270deg);
+    width: 60vw;
+    display: flex;
+    border-radius: 1em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  
+     /* Make sure card images take up the full width of their container */
+  }
+  .cards > img:nth-child(2) {
+    margin-left: 60%;
+    margin-bottom: 0%; /* Displace the second child image to the right */
+  }
+  .cards > img:nth-child(1) {
+     /* Displace the second child image to the right */
+  }
+  .outer{
+    margin: auto;
+    margin-top: 20%;
+   
+    width: 90%;
+  }
+
+
+}
+.thankyou{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%
+}
+.thankyou > img{
+  width: 5em;
+  margin-bottom: 4%;
+}
+.thankyou > p{
+  color: grey !important;
+  margin-bottom: 3%;
+}
+.thankyou > h1{
+  margin-bottom: 4%;
 }
