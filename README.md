@@ -6,7 +6,7 @@ This is a [Vite](https://vitejs.dev) project together with React.
 
 [Configuration](https://codesandbox.io/docs/projects/learn/setting-up/tasks) `.codesandbox/tasks.json` has been added to optimize it for [CodeSandbox](https://codesandbox.io/dashboard).
 
-#Features
+# Features
 
 Validation and Error Handling: Validates user inputs to ensure the accuracy and integrity of submitted data, with error handling for incorrect or incomplete information.
 
@@ -22,7 +22,7 @@ Secure Submission: Ensures secure transmission of data and proper handling of se
 Technologies Used
 
 React: Frontend JavaScript library for building user interfaces.
-
+# RUN
 To run this project locally, follow these steps:
 
 Clone the repository:
@@ -51,6 +51,6 @@ Contributing
 
 Contributions are welcome! If you'd like to improve the project, fork the repository and submit a pull request. Please follow the contributing guidelines.
 
-License
+# License
 
 This project is licensed under the MIT License.
