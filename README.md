@@ -32,7 +32,7 @@ React: Frontend JavaScript library for building user interfaces.
 
 ## To run this project locally
 
-U could just fork and download the Zip from the Sandbox [![Download from CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/codesandbox/codesandbox-template-vite-react/main)
+You could just fork and download the Zip from the Sandbox [![Download from CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/codesandbox/codesandbox-template-vite-react/main)
 
 
 Access the application and its code via the provided URL.
