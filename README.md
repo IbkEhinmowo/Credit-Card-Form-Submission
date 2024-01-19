@@ -8,17 +8,23 @@ This is a [Vite](https://vitejs.dev) project together with React.
 
 # Features
 
-Validation and Error Handling: Validates user inputs to ensure the accuracy and integrity of submitted data, with error handling for incorrect or incomplete information.
+## Validation and Error Handling 
+Validates user inputs to ensure the accuracy and integrity of submitted data, with error handling for incorrect or incomplete information.
 
-Responsive Design: Ensures a seamless experience across various devices and screen sizes for user convenience.
+## Responsive Design
+Ensures a seamless experience across various devices and screen sizes for user convenience.
 
-React Components: Utilizes React components for building a dynamic and interactive user interface.
+## React Components
+Utilizes React components for building a dynamic and interactive user interface.
 
-Form State Management: Manages form state using React's state and/or state management libraries like Redux or Context API.
+## Form State Management 
+Manages form state using React's state and/or state management libraries like Redux or Context API.
 
-Input Validation: Implements validation logic for credit card information input fields.
+## Input Validation
+Implements validation logic for credit card information input fields.
 
-Secure Submission: Ensures secure transmission of data and proper handling of sensitive information.
+## Secure Submission 
+Ensures secure transmission of data and proper handling of sensitive information.
 Technologies Used
 
 React: Frontend JavaScript library for building user interfaces.
@@ -43,7 +49,7 @@ Copy code
 npm start
 Usage
 
-Access the application via the provided URL.
+Access the application and its code via the provided URL.
 Fill in the credit card form with valid details (e.g., card number, expiration date, CVV).
 Validate the form to ensure correctness and completeness of the entered information.
 Submit the form for processing (if backend functionality is available).
