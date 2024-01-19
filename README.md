@@ -51,6 +51,10 @@ Contributing
 
 Contributions are welcome! If you'd like to improve the project, fork the repository and submit a pull request. Please follow the contributing guidelines.
 
+
+
+U can also just fork and download the Zip from the Sandbox [![Download from CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/codesandbox/codesandbox-template-vite-react/main)
+
 # License
 
 This project is licensed under the MIT License.
