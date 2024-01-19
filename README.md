@@ -29,25 +29,11 @@ Technologies Used
 
 React: Frontend JavaScript library for building user interfaces.
 # RUN
-To run this project locally, follow these steps:
 
-Clone the repository:
-bash
-Copy code
-git clone REPO
-Navigate to the project directory:
-bash
-Copy code
-cd Credit-Card-Form-Submission
-Install dependencies:
-bash
-Copy code
-npm install
-Start the development server:
-bash
-Copy code
-npm start
-Usage
+## To run this project locally
+
+U could just fork and download the Zip from the Sandbox [![Download from CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/codesandbox/codesandbox-template-vite-react/main)
+
 
 Access the application and its code via the provided URL.
 Fill in the credit card form with valid details (e.g., card number, expiration date, CVV).
@@ -56,10 +42,6 @@ Submit the form for processing (if backend functionality is available).
 Contributing
 
 Contributions are welcome! If you'd like to improve the project, fork the repository and submit a pull request. Please follow the contributing guidelines.
-
-
-
-U can also just fork and download the Zip from the Sandbox [![Download from CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/codesandbox/codesandbox-template-vite-react/main)
 
 # License
 
